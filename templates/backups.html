@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <title>Database CSV File Upload</title>
+    <title>Manage Backups</title>
   </head>
   <body>
-    <h1>Upload your CSV file</h1>
+    <h1>Select operation</h1>
     <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <label for="tablename">Table:</label><br>
-      <input type="text" id="tablename" name="tablename"><br>
-      <p><input type="submit" value="Submit"></p>
+      <input type="radio" id="create" name="operation" value="backup">
+      <label for="create">Create Backup</label><br>
+      <input type="radio" id="restore" name="operation" value="restore">
+      <label for="restore">Restore Backup</label><br>
+      <p><input type="submit" value="Submit operation"></p>
     </form>
   </body>
 </html>

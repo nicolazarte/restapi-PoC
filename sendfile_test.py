@@ -22,9 +22,8 @@ data = '''{
 }'''
 dict = json.loads(data)
 
-url = "http://127.0.0.1:49199/test_api"
+url = "http://127.0.0.1:49205/submit_json"
 
 file = ('data', json.dumps(data), 'application/json')
 r = requests.post(url, json=dict)
-#r2 =requests.post(url, files = (''))
 print(r)
